@@ -26,9 +26,6 @@
 .link, a {
   text-decoration: none;
 }
-.link:hover, a:hover {
-  color: white;
-}
 
 .nav__item {
   list-style-type: none;
