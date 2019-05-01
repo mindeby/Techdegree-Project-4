@@ -10,5 +10,5 @@
 
 @function per-lines($per-space) {
   $g-pct: px-to-pc($gutter);
-  @return (100% - $g-pct) / $per-space;
+  @return $per-space / (100% - $g-pct) * 100%;
 }

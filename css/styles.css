@@ -181,8 +181,8 @@ a:hover {
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--12 {
-    flex-basis: 0.9958333333;
-    margin: 5px;
+    flex-basis: 100.8403361345%;
+    margin: 10px;
   }
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--8 {
@@ -190,8 +190,8 @@ a:hover {
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--8 {
-    flex-basis: 1.2447916667;
-    margin: 5px;
+    flex-basis: 67.5630252101%;
+    margin: 10px;
   }
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--3 {
@@ -199,8 +199,8 @@ a:hover {
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--3 {
-    flex-basis: 3.9833333333;
-    margin: 5px;
+    flex-basis: 25.2100840336%;
+    margin: 10px;
   }
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--4 {
@@ -208,8 +208,8 @@ a:hover {
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--4 {
-    flex-basis: 3.0176767677;
-    margin: 5px;
+    flex-basis: 33.2773109244%;
+    margin: 10px;
   }
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--5 {
@@ -217,8 +217,8 @@ a:hover {
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--5 {
-    flex-basis: 3.3194444444;
-    margin: 5px;
+    flex-basis: 30.2521008403%;
+    margin: 10px;
   }
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--6 {
@@ -226,8 +226,8 @@ a:hover {
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--6 {
-    flex-basis: 1.9916666667;
-    margin: 5px;
+    flex-basis: 50.4201680672%;
+    margin: 10px;
   }
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7 {
@@ -235,12 +235,15 @@ a:hover {
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7 {
-    flex-basis: 1.4226190476;
-    margin: 5px;
+    flex-basis: 70.5882352941%;
+    margin: 10px;
   }
-  .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7:last-child {
-    flex-basis: 1.4226190476;
-    margin: auto;
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7.centered {
+    flex-basis: 70.5882352941%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

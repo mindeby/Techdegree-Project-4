@@ -52,6 +52,7 @@
 
           // make column width a percentage of the column number / total columns
           flex-basis: #{$i / 12 * 100 + "%"} ;
+
         }
       }
     }
@@ -73,9 +74,10 @@
       @extend %btn;
       background-color: $color-warning;
       @include mq ('m') {
-        flex-basis: per-lines(80%);
+        flex-basis: per-lines(67%);
         margin: $gutter;
       }
+
     }
     &--3{
       @extend %btn;
@@ -115,15 +117,20 @@
       @include mq ('m') {
         flex-basis: per-lines(70%);
         margin: $gutter;
-        &:last-child{
-          flex-basis: per-lines(70%);
-          margin: auto;
+        &.centered {
+          @include mq ('m') {
+            flex-basis: per-lines(70%);
+            margin-left: auto;
+            margin-right: auto;
+          }
         }
       }
 
     }
   }
 }
+
+
 
 
 // targets all elements with classes that begin with grid__col
