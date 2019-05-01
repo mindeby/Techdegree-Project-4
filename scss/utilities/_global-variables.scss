@@ -1,2 +1,37 @@
 // create variables for your repeated values
 //at minimum for fonts, breakpoints and colors
+
+
+// font stack
+
+$font-stack-primary:'Open Sans', sans-serif;
+$font-stack-secondary:'Montserrat', sans-serif;
+
+//colors
+$white: white;
+
+$color-primary:#58E1C1; //green circle
+$color-secondary:#51DDFC; //blue circle and default button
+
+$color-success:#63CC82; //green
+$color-error:#E4757A; //red
+$color-warning:#FD7856; //orange
+$color-info:#927BC1; //dark purple
+
+$color-theme1:#3FABCA; //darker blue
+$color-theme2:#DEB2EE; //light purple
+
+$color-text: #797979;
+
+//breakpoints & media queries
+
+$breakpoints: (
+  's': 480px,
+  'm': 768px,
+  'l': 1400px,
+);
+
+// widths
+
+$max-width: 900px;
+$gutter: 10px;

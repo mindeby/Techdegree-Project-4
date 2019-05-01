@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700");
-.nav, .btn--info, .btn--warning, .btn--error, .btn--success, .btn--default, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--6, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--5, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--4, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--3, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--8, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--12 {
+@media (min-width: 1400px) {
+  .container {
+    flex: 1;
+  }
+}
+.nav, .btn--info, .btn--warning, .btn--error, .btn--success, .btn--default, .grid__col--12, .grid__col--8, .grid__col--7, .grid__col--6, .grid__col--5, .grid__col--4, .grid__col--3 {
   color: white;
   display: block;
   margin: auto;
@@ -29,11 +34,6 @@
 
 p {
   margin-bottom: 1.25em;
-  text-align: left;
-}
-
-a {
-  text-decoration: none;
 }
 
 .grid__row {
@@ -167,26 +167,26 @@ a {
   }
 }
 
-.headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--12 {
-  background-color: #58E1C1;
-}
-.headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--8 {
-  background-color: #FD7856;
-}
-.headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--3 {
+.grid__col--3 {
   background-color: #DEB2EE;
 }
-.headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--4 {
+.grid__col--4 {
   background-color: #51DDFC;
 }
-.headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--5 {
+.grid__col--5 {
   background-color: #63CC82;
 }
-.headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--6 {
+.grid__col--6 {
   background-color: #3FABCA;
 }
-.headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7 {
+.grid__col--7 {
   background-color: #E4757A;
+}
+.grid__col--8 {
+  background-color: #FD7856;
+}
+.grid__col--12 {
+  background-color: #58E1C1;
 }
 
 @media (min-width: 768px) {
@@ -292,4 +292,7 @@ a {
   font-weight: 600;
 }
 
-/*# sourceMappingURL=styles.css.map */
+
+
+
+/*# sourceMappingURL=/styles.b61e60ae.css.map */

@@ -1,0 +1,17 @@
+.form__input {
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  border-bottom: $color-primary 5px solid;
+  min-width: 50%;
+  width: 92%;
+  padding: 10px;
+
+  &:last-of-type {
+    margin-bottom: 24px;
+  }
+}
+
+.form {
+  background-color: $white;
+}

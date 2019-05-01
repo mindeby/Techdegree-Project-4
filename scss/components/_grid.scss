@@ -2,9 +2,12 @@
 // _grid.scss
 // styles related to the grid system and
 // main container.
+
+
 // major grid styles have been added here for you
 // but additional styling may be needed
 // **********************************************
+
 
 
 // grid base class
@@ -16,8 +19,9 @@
     display: flex;
     flex-direction: column;
 
+
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq ('m') {
       flex-direction: row;
     }
   }
@@ -33,14 +37,14 @@
       // selector would be .grid__col--1
       &--#{$i} {
 
-        // base styles applied to all grid columns 
+        // base styles applied to all grid columns
         // NOTE: could be converted to a placeholder, along with margin
         // from the  media query
         margin-top: 10px;
         flex-basis: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
+        @include mq ('m') {
 
           // base stlyes applied to all grid columns
           margin-top: 0;
@@ -53,13 +57,59 @@
   }
 }
 
+.headline--secondary:nth-last-child(3n+5)~[class^=grid__row]{
+  .grid__col {
+    &--12{
+      @extend %btn;
+      background-color: $color-primary;
+    }
+    &--8{
+      @extend %btn;
+      background-color: $color-warning;
+    }
+    &--3{
+      @extend %btn;
+      background-color: $color-theme2;
+
+    }
+
+    &--4{
+      @extend %btn;
+      background-color: $color-secondary;
+    }
+
+    &--5{
+      @extend %btn;
+      background-color: $color-success;
+    }
+
+    &--6{
+      @extend %btn;
+      background-color: $color-theme1;
+    }
+
+    &--7{
+      background-color: $color-error;
+      @extend %btn;
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
 // targets all elements with classes that begin with grid__col
 [class^=grid__col] {
   // grid__col + grid__col, targets two sibling columns
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq ('m') {
 
       // add grid gutter
       margin-left: 10px;

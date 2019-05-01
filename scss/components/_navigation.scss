@@ -1,0 +1,13 @@
+.nav {
+    font-weight: 500;
+    @extend %btn;
+    text-transform: none;
+    color: $color-text;
+  &__item {
+    list-style-type: none;
+      &:hover{
+      background-color: $color-primary;
+      color: $white;
+      }
+  }
+}
