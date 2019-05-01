@@ -52,7 +52,8 @@
 
 .link {
   text-decoration: none;
-  color: $color-text;
+  font-weight: 800;
+  color: $color-secondary;
   &:hover{
     color: $white;
   }

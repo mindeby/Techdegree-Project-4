@@ -263,6 +263,12 @@ a:hover {
     margin-left: 30px;
   }
 }
+@media (min-width: 768px) {
+  .btn--default:nth-last-child(1) {
+    width: 100%;
+    margin-left: auto;
+  }
+}
 .btn--success {
   background-color: #63CC82;
 }
@@ -419,7 +425,8 @@ a:hover {
 
 .link {
   text-decoration: none;
-  color: #797979;
+  font-weight: 800;
+  color: #51DDFC;
 }
 .link:hover {
   color: white;

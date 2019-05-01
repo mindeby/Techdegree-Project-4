@@ -4,13 +4,22 @@
     &--default{
       background-color: $color-secondary;
       @extend %btn;
+
       @include mq ('m') {
         width: 15%;
         display: inline-block;
         margin-left: 30px;
       }
 
+
     }
+    &--default:nth-last-child(1) {
+      @include mq ('m') {
+        width: 100%;
+        margin-left: auto;
+      }
+    }
+
     &--success{
       background-color:$color-success;
       @extend %btn;
