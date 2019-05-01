@@ -72,6 +72,7 @@
       @include mq ('m') {
         flex-basis: per-lines(100%);
         margin: $gutter;
+        text-align: center;
       }
     }
     &--8{
@@ -84,6 +85,7 @@
       @include mq ('m') {
         flex-basis: per-lines(67%);
         margin: $gutter;
+        text-align: center;
       }
 
     }
@@ -97,6 +99,7 @@
       @include mq ('m') {
         flex-basis: per-lines(25%);
         margin: $gutter;
+        text-align: center;
       }
     }
     &--4{
@@ -109,6 +112,7 @@
       @include mq ('m') {
         flex-basis: per-lines(33%);
         margin: $gutter;
+        text-align: center;
       }
     }
     &--5{
@@ -121,6 +125,7 @@
       @include mq ('m') {
         flex-basis: per-lines(30%);
         margin: $gutter;
+        text-align: center;
       }
     }
     &--6{
@@ -133,6 +138,7 @@
       @include mq ('m') {
         flex-basis: per-lines(50%);
         margin: $gutter;
+        text-align: center;
       }
     }
     &--7{
@@ -145,6 +151,7 @@
       @include mq ('m') {
         flex-basis: per-lines(70%);
         margin: $gutter;
+        text-align: center;
         &.centered {
           @include mq ('m') {
             flex-basis: per-lines(70%);

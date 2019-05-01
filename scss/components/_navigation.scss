@@ -6,20 +6,17 @@
     @include center;
 
   &__item {
-      list-style-type: none;
-      text-decoration: none;
-      line-height: 3em;
+      @extend %nav_item_look;
+
 
         &:hover {
         background-color: $color-primary;
         border-radius: 5px;
 
           a {
-            color:$white;
+            color: $white;
           }
         }
-
-
 
       @include mq ('m') {
         display: inline-block;

@@ -19,4 +19,20 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  vertical-align: top;
+}
+
+%links {
+  text-decoration: none;
+  &:hover{
+    color: $white;
+  }
+}
+
+%nav_item_look {
+  list-style-type: none;
+  text-decoration: none;
+  line-height: 3em;
+  padding-left: 8px;
+  padding-right: 8px;
 }

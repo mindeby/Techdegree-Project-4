@@ -7,14 +7,26 @@
   }
   &--frame {
     @extend %img;
-    width: 100%;
-    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 12px;
     border: #cdcdcd 1px solid;
+    @include mq ('m') {
+      max-width: 60%;
+    }
+    @include mq ('l') {
+      max-width: 70%;
+    }
   }
   &--avatar {
     @extend %img;
     margin-top: 20px;
     margin-bottom: 20px;
+    @include mq ('m') {
+      max-width: 40%;
+    }
+    @include mq ('l') {
+      max-width: 50%;
+    }
   }
 }

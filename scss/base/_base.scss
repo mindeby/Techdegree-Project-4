@@ -14,10 +14,7 @@ ul {
 }
 
 a {
-  text-decoration: none;
   font-weight: 300;
   color: $color-text;
-  &:hover{
-    color: $white;
-  }
+  @extend %links;
 }

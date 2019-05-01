@@ -51,10 +51,8 @@
 }
 
 .link {
-  text-decoration: none;
   font-weight: 700;
   color: $color-secondary;
-  &:hover{
-    color: $white;
-  }
+  @extend %links;
+
 }
