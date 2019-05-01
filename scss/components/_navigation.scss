@@ -10,10 +10,16 @@
       text-decoration: none;
       line-height: 3em;
 
-        &:hover,{
+        &:hover {
         background-color: $color-primary;
         border-radius: 5px;
+
+          a {
+            color:$white;
+          }
         }
+
+
 
       @include mq ('m') {
         display: inline-block;

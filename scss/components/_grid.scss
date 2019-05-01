@@ -64,8 +64,11 @@
   .grid__col {
     &--12{
       @extend %btn;
-      background-color: $color-primary;
+      background-color: lighten($color-primary, 15%);
       color: $color-text;
+      text-transform: lowercase;
+      text-align: left;
+      margin-bottom: 5px;
       @include mq ('m') {
         flex-basis: per-lines(100%);
         margin: $gutter;
@@ -73,8 +76,11 @@
     }
     &--8{
       @extend %btn;
-      background-color: $color-warning;
+      background-color: lighten($color-warning, 10%);
       color: $color-text;
+      text-transform: lowercase;
+      text-align: left;
+      margin-bottom: 5px;
       @include mq ('m') {
         flex-basis: per-lines(67%);
         margin: $gutter;
@@ -85,6 +91,9 @@
       @extend %btn;
       background-color: $color-theme2;
       color: $color-text;
+      text-transform: lowercase;
+      text-align: left;
+      margin-bottom: 5px;
       @include mq ('m') {
         flex-basis: per-lines(25%);
         margin: $gutter;
@@ -92,8 +101,11 @@
     }
     &--4{
       @extend %btn;
-      background-color: $color-secondary;
+      background-color: lighten($color-secondary, 10%);
       color: $color-text;
+      text-transform: lowercase;
+      text-align: left;
+      margin-bottom: 5px;
       @include mq ('m') {
         flex-basis: per-lines(33%);
         margin: $gutter;
@@ -101,8 +113,11 @@
     }
     &--5{
       @extend %btn;
-      background-color: $color-success;
+      background-color: lighten($color-success, 10%);
       color: $color-text;
+      text-transform: lowercase;
+      text-align: left;
+      margin-bottom: 5px;
       @include mq ('m') {
         flex-basis: per-lines(30%);
         margin: $gutter;
@@ -112,13 +127,19 @@
       @extend %btn;
       background-color: $color-theme1;
       color: $color-text;
+      text-transform: lowercase;
+      text-align: left;
+      margin-bottom: 5px;
       @include mq ('m') {
         flex-basis: per-lines(50%);
         margin: $gutter;
       }
     }
     &--7{
-      background-color: $color-error;
+      background-color: lighten($color-error, 10%);
+      text-transform: lowercase;
+      text-align: left;
+      margin-bottom: 5px;
       @extend %btn;
       color: $color-text;
       @include mq ('m') {
