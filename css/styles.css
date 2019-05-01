@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700");
-.nav, .btn--info, .btn--warning, .btn--error, .btn--success, .btn--default, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--6, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--5, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--4, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--3, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--8, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--12 {
+.btn--info, .btn--warning, .btn--error, .btn--success, .btn--default, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--6, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--5, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--4, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--3, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--8, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--12 {
   color: white;
   display: block;
   margin: auto;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -17,10 +17,13 @@
 }
 
 .img--avatar, .img--frame, .img--logo {
-  background-color: white;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.test {
+  flex-basis: 1.6597222222;
 }
 
 * {
@@ -32,14 +35,24 @@ p {
   text-align: left;
 }
 
+ul {
+  padding: 0;
+}
+
 a {
   text-decoration: none;
+  font-weight: 300;
+  color: #797979;
+}
+a:hover {
+  color: white;
 }
 
 .grid__row {
   padding: 1em 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 @media (min-width: 768px) {
   .grid__row {
@@ -170,23 +183,69 @@ a {
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--12 {
   background-color: #58E1C1;
 }
+@media (min-width: 768px) {
+  .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--12 {
+    flex-basis: 0.9958333333;
+    margin: 5px;
+  }
+}
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--8 {
   background-color: #FD7856;
+}
+@media (min-width: 768px) {
+  .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--8 {
+    flex-basis: 1.2447916667;
+    margin: 5px;
+  }
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--3 {
   background-color: #DEB2EE;
 }
+@media (min-width: 768px) {
+  .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--3 {
+    flex-basis: 3.9833333333;
+    margin: 5px;
+  }
+}
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--4 {
   background-color: #51DDFC;
+}
+@media (min-width: 768px) {
+  .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--4 {
+    flex-basis: 3.0176767677;
+    margin: 5px;
+  }
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--5 {
   background-color: #63CC82;
 }
+@media (min-width: 768px) {
+  .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--5 {
+    flex-basis: 3.3194444444;
+    margin: 5px;
+  }
+}
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--6 {
   background-color: #3FABCA;
 }
+@media (min-width: 768px) {
+  .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--6 {
+    flex-basis: 1.9916666667;
+    margin: 5px;
+  }
+}
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7 {
   background-color: #E4757A;
+}
+@media (min-width: 768px) {
+  .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7 {
+    flex-basis: 1.4226190476;
+    margin: 5px;
+  }
+  .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7:last-child {
+    flex-basis: 1.4226190476;
+    margin: auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -217,15 +276,25 @@ a {
   border: none;
   border-bottom: #58E1C1 5px solid;
   min-width: 50%;
-  width: 92%;
+  width: 95%;
   padding: 10px;
+  margin-bottom: 2.5em;
 }
 .form__input:last-of-type {
   margin-bottom: 24px;
 }
 
 .form {
-  background-color: white;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.form__label--hidden {
+  display: none;
 }
 
 .img--frame {
@@ -234,17 +303,34 @@ a {
   padding: 12px;
   border: #cdcdcd 1px solid;
 }
+.img--avatar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .nav {
   font-weight: 500;
   text-transform: none;
-  color: #797979;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 .nav__item {
   list-style-type: none;
+  text-decoration: none;
+  line-height: 3em;
 }
 .nav__item:hover {
   background-color: #58E1C1;
-  color: white;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .nav__item {
+    display: inline-block;
+    margin-right: 2em;
+  }
 }
 
 .container {
@@ -253,6 +339,15 @@ a {
   line-height: 1.5;
   font-family: "Open Sans", sans-serif, "Montserrat", sans-serif;
   text-align: left;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 
 .headline--primary {
@@ -267,10 +362,11 @@ a {
 .headline--secondary {
   text-align: left;
   color: #797979;
-  font-weight: 400;
+  font-weight: lighter;
   text-transform: none;
   line-height: 1.8em;
   margin-left: 10px;
+  margin-top: 0;
 }
 
 .blockquote {
@@ -281,15 +377,18 @@ a {
   line-height: 2.2rem;
   color: #797979;
   font-style: italic;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-transform: none;
-  font-weight: 200;
+  font-weight: 100;
+  margin-bottom: 0;
 }
 
 .link {
   text-decoration: none;
-  color: #51DDFC;
-  font-weight: 600;
+  color: #797979;
+}
+.link:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -3,10 +3,11 @@
 
 //center containers
 @mixin center {
-  width: 90%;
+  width: 100%;
   max-width: $max-width;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 //make objects round
@@ -37,3 +38,5 @@
     }
   }
 }
+
+//flexbox settings

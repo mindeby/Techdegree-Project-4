@@ -18,6 +18,7 @@
     padding: 1em 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
 
     // NOTE: replace with media query mixin if aiming for exceeds
@@ -57,50 +58,72 @@
   }
 }
 
+//targets only the columns after the last .headline--secondary
 .headline--secondary:nth-last-child(3n+5)~[class^=grid__row]{
   .grid__col {
     &--12{
       @extend %btn;
       background-color: $color-primary;
+      @include mq ('m') {
+        flex-basis: per-lines(100%);
+        margin: $gutter;
+      }
     }
     &--8{
       @extend %btn;
       background-color: $color-warning;
+      @include mq ('m') {
+        flex-basis: per-lines(80%);
+        margin: $gutter;
+      }
     }
     &--3{
       @extend %btn;
       background-color: $color-theme2;
-
+      @include mq ('m') {
+        flex-basis: per-lines(25%);
+        margin: $gutter;
+      }
     }
-
     &--4{
       @extend %btn;
       background-color: $color-secondary;
+      @include mq ('m') {
+        flex-basis: per-lines(33%);
+        margin: $gutter;
+      }
     }
-
     &--5{
       @extend %btn;
       background-color: $color-success;
+      @include mq ('m') {
+        flex-basis: per-lines(30%);
+        margin: $gutter;
+      }
     }
-
     &--6{
       @extend %btn;
       background-color: $color-theme1;
+      @include mq ('m') {
+        flex-basis: per-lines(50%);
+        margin: $gutter;
+      }
     }
-
     &--7{
       background-color: $color-error;
       @extend %btn;
+      @include mq ('m') {
+        flex-basis: per-lines(70%);
+        margin: $gutter;
+        &:last-child{
+          flex-basis: per-lines(70%);
+          margin: auto;
+        }
+      }
 
     }
   }
 }
-
-
-
-
-
-
 
 
 // targets all elements with classes that begin with grid__col

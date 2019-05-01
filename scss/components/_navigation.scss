@@ -1,13 +1,21 @@
 .nav {
     font-weight: 500;
-    @extend %btn;
     text-transform: none;
-    color: $color-text;
+    @include center;
+
   &__item {
-    list-style-type: none;
-      &:hover{
-      background-color: $color-primary;
-      color: $white;
+      list-style-type: none;
+      text-decoration: none;
+      line-height: 3em;
+
+        &:hover,{
+        background-color: $color-primary;
+        border-radius: 5px;
+        }
+
+      @include mq ('m') {
+        display: inline-block;
+        margin-right: 2em;
       }
   }
 }

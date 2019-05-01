@@ -4,14 +4,20 @@
   border: none;
   border-bottom: $color-primary 5px solid;
   min-width: 50%;
-  width: 92%;
+  width: 95%;
   padding: 10px;
-
+  margin-bottom: 2.5em;
   &:last-of-type {
     margin-bottom: 24px;
   }
 }
 
 .form {
-  background-color: $white;
+  @include center;
+  vertical-align: bottom;
+}
+
+.form__label--hidden {
+  display: none;
+
 }

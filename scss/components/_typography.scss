@@ -10,6 +10,9 @@
   font-family: $font-stack-primary,
                $font-stack-secondary;
   text-align: left;
+  @include mq ('m') {
+    @include center;
+  }
 
 }
 
@@ -26,10 +29,11 @@
 .headline--secondary {
   text-align: left;
   color: $color-text;
-  font-weight: 400;
+  font-weight: lighter;
   text-transform: none;
   line-height: 1.8em;
   margin-left: 10px;
+  margin-top: 0;
 }
 
 .blockquote {
@@ -40,13 +44,16 @@
   line-height: 2.2rem;
   color: $color-text;
   font-style: italic;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-transform: none;
-  font-weight: 200;
+  font-weight: 100;
+  margin-bottom: 0;
 }
 
 .link {
   text-decoration: none;
-  color: $color-secondary;
-  font-weight: 600;
+  color: $color-text;
+  &:hover{
+    color: $white;
+  }
 }

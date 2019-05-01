@@ -1,15 +1,23 @@
-// only apply styles to *, ul, p, a
+// only apply styles to *, ul, p
 
 * {
   box-sizing: border-box;
 }
-
 
 p {
   margin-bottom: 1.25em;
   text-align: left;
 }
 
+ul {
+  padding:0;
+}
+
 a {
   text-decoration: none;
+  font-weight: 300;
+  color: $color-text;
+  &:hover{
+    color: $white;
+  }
 }
