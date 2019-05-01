@@ -33,3 +33,10 @@
   padding-left: 8px;
   padding-right: 8px;
 }
+
+%col_look {
+  color: $color-text;
+  text-transform: lowercase;
+  text-align: left;
+  margin-bottom: 5px;
+}

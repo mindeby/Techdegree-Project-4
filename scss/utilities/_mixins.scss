@@ -10,14 +10,6 @@
   text-align: center;
 }
 
-//make objects round
-
-@mixin roundy($dim, $brdr: null) {
-  width: $dim;
-  height: $dim;
-  border: $brdr;
-  border-radius: 50%;
-}
 
 // media queries
 
@@ -40,3 +32,9 @@
 }
 
 //flexbox settings
+@mixin flexbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em 10px;
+ }

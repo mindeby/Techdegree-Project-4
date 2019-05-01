@@ -35,6 +35,13 @@
   padding-right: 8px;
 }
 
+.headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--6, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--5, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--4, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--3, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--8, .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--12 {
+  color: #797979;
+  text-transform: lowercase;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -54,10 +61,10 @@ a {
 }
 
 .grid__row {
-  padding: 1em 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 1em 10px;
 }
 @media (min-width: 768px) {
   .grid__row {
@@ -187,10 +194,6 @@ a {
 
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--12 {
   background-color: #99edd9;
-  color: #797979;
-  text-transform: lowercase;
-  text-align: left;
-  margin-bottom: 5px;
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--12 {
@@ -201,10 +204,6 @@ a {
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--8 {
   background-color: #fea088;
-  color: #797979;
-  text-transform: lowercase;
-  text-align: left;
-  margin-bottom: 5px;
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--8 {
@@ -215,10 +214,6 @@ a {
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--3 {
   background-color: #DEB2EE;
-  color: #797979;
-  text-transform: lowercase;
-  text-align: left;
-  margin-bottom: 5px;
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--3 {
@@ -229,10 +224,6 @@ a {
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--4 {
   background-color: #83e7fd;
-  color: #797979;
-  text-transform: lowercase;
-  text-align: left;
-  margin-bottom: 5px;
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--4 {
@@ -243,10 +234,6 @@ a {
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--5 {
   background-color: #89d9a1;
-  color: #797979;
-  text-transform: lowercase;
-  text-align: left;
-  margin-bottom: 5px;
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--5 {
@@ -257,10 +244,6 @@ a {
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--6 {
   background-color: #3FABCA;
-  color: #797979;
-  text-transform: lowercase;
-  text-align: left;
-  margin-bottom: 5px;
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--6 {
@@ -271,10 +254,6 @@ a {
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7 {
   background-color: #eca0a3;
-  text-transform: lowercase;
-  text-align: left;
-  margin-bottom: 5px;
-  color: #797979;
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7 {
@@ -426,7 +405,7 @@ a {
   border-radius: 5px;
 }
 .nav__item:hover a {
-  color: white;
+  color: #ffffff;
 }
 @media (min-width: 768px) {
   .nav__item {
