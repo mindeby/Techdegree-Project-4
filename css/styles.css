@@ -178,6 +178,7 @@ a:hover {
 
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--12 {
   background-color: #58E1C1;
+  color: #797979;
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--12 {
@@ -187,6 +188,7 @@ a:hover {
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--8 {
   background-color: #FD7856;
+  color: #797979;
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--8 {
@@ -196,6 +198,7 @@ a:hover {
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--3 {
   background-color: #DEB2EE;
+  color: #797979;
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--3 {
@@ -205,6 +208,7 @@ a:hover {
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--4 {
   background-color: #51DDFC;
+  color: #797979;
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--4 {
@@ -214,6 +218,7 @@ a:hover {
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--5 {
   background-color: #63CC82;
+  color: #797979;
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--5 {
@@ -223,6 +228,7 @@ a:hover {
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--6 {
   background-color: #3FABCA;
+  color: #797979;
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--6 {
@@ -232,6 +238,7 @@ a:hover {
 }
 .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7 {
   background-color: #E4757A;
+  color: #797979;
 }
 @media (min-width: 768px) {
   .headline--secondary:nth-last-child(3n+5) ~ [class^=grid__row] .grid__col--7 {
