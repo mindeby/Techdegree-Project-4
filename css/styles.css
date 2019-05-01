@@ -22,10 +22,6 @@
   margin-right: auto;
 }
 
-.test {
-  flex-basis: 1.6597222222;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -257,17 +253,52 @@ a:hover {
 .btn--default {
   background-color: #51DDFC;
 }
+@media (min-width: 768px) {
+  .btn--default {
+    width: 15%;
+    display: inline-block;
+    margin-left: 30px;
+  }
+}
 .btn--success {
   background-color: #63CC82;
+}
+@media (min-width: 768px) {
+  .btn--success {
+    width: 15%;
+    display: inline-block;
+    margin-left: 30px;
+  }
 }
 .btn--error {
   background-color: #E4757A;
 }
+@media (min-width: 768px) {
+  .btn--error {
+    width: 15%;
+    display: inline-block;
+    margin-left: 30px;
+  }
+}
 .btn--warning {
   background-color: #FD7856;
 }
+@media (min-width: 768px) {
+  .btn--warning {
+    width: 15%;
+    display: inline-block;
+    margin-left: 30px;
+  }
+}
 .btn--info {
   background-color: #927BC1;
+}
+@media (min-width: 768px) {
+  .btn--info {
+    width: 15%;
+    display: inline-block;
+    margin-left: 30px;
+  }
 }
 
 .form__input {

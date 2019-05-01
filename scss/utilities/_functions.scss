@@ -5,17 +5,10 @@
   @return ($target / $context) * 100%;
 }
 
-@function per-line($items) {
-  $g-pct: px-to-pc($gutter) * 2;
-  $g-total: $items * $g-pct;
-  @return (100% / $items) - $g-total;
-}
+//a function where you input the percentage of space you want a column
+//to occupy after removing the gutter percentage
 
 @function per-lines($per-space) {
   $g-pct: px-to-pc($gutter);
   @return (100% - $g-pct) / $per-space;
-}
-
-.test {
-  flex-basis: per-lines(60%);
 }
